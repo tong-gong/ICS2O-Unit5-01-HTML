@@ -12,12 +12,18 @@
     <p><input id="user" type="text" placeholder="Enter number between 1-6"></p>
     <button onclick="document.getElementById('demo').innerHTML = getRndInteger(1,7)">Click Me</button>
     <p id="demo"></p>
+     
     <script>
       function getRndInteger(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
       }
+      if ("user" == "demo") {
+      alert("You win!");
+      }
+      else {
+      alert("You guessed " + "demo" + ", but that's wrong!");
+      }
       
     </script>
 
-  </body>
-</html>
+  </body> 
